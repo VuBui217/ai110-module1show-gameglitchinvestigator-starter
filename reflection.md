@@ -5,8 +5,16 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+
+  When I first ran the game, I noticed the difficulty settings felt off. Easy goes from 1-20 with 6 attempts, Normal goes from 1-100 with 8 attempts, but Hard only goes from 1-50 with 5 attempts. Hard should be the most challenging, but its number range is actually smaller than Normal's, which doesn't make sense. A harder level should have a wider range of numbers, not a narrower one.
+
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
+  1. The difficulty ranges don't scale correctly — Hard (1–50, 5 attempts) is actually easier than Normal (1–100, 8 attempts).
+  2. The hint always displays "Go LOWER" regardless of the guess, even when entering a negative number or a smaller number than the secret.
+  3. The input field accepts negative numbers, which fall outside the valid guess range for any difficulty level.
+  4. The "New Game" button does not wor, pressing it does not reset the game.
+  5. The secret number is always drawn from 1–100 regardless of the selected difficulty.
 
 ---
 
